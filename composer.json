@@ -1,0 +1,35 @@
+{
+  "name": "koharakazuya/laravel-openapi-validator-middleware",
+  "description": "Laravel middleware validates requests and responses by an OpenAPI specification document",
+  "keywords": [
+    "laravel",
+    "openapi",
+    "validator",
+    "middleware"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "KoharaKazuya",
+      "email": "reflect.results@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.1",
+    "koharakazuya/laravel-psr15-middleware": "^0.1.0",
+    "hkarlstrom/openapi-validation-middleware": "^0.2.3"
+  },
+  "require-dev": {},
+  "autoload": {
+    "psr-4": {
+      "KoharaKazuya\\LaravelOpenAPIValidatorMiddleware\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "KoharaKazuya\\LaravelOpenAPIValidatorMiddleware\\LaravelOpenAPIValidatorMiddlewareServiceProvider"
+      ]
+    }
+  }
+}
